@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow: hidden;
+            color: #333;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(34, 34, 34, 0.8);
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        nav ul li:hover a {
+            background: #ff5722;
+            color: #fff;
+        }
+        main {
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        main h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        main p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 1;
+            filter: brightness(50%);
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .content img:hover {
+            transform: scale(1.05);
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="sp.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <header>
+        <h1>Sports</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="geography.html">Geography</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="sports.html">Sports</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content">
+            <h2>Sports Information</h2>
+            <p>
+                Sports play a vital role in society, serving as a powerful means of physical fitness, personal development, and social interaction. Engaging in sports helps individuals improve their physical health by enhancing cardiovascular endurance, muscular strength, flexibility, and coordination. Beyond physical benefits, sports contribute significantly to mental well-being, providing an outlet for stress relief, boosting self-esteem, and fostering a sense of accomplishment. They also teach valuable life skills such as teamwork, discipline, leadership, and perseverance. Socially, sports bring people together, building communities and promoting inclusivity and cultural exchange. They create opportunities for individuals to connect, form friendships, and develop a sense of belonging. Moreover, sports can inspire and unite people, transcending barriers of age, gender, and background. Whether at the grassroots level or on the global stage, sports have the power to positively impact individuals and societies, making them an essential aspect of human life.
+            </p>
+            <button style="fill: black;"  onclick="">Generate QA</button><br>
+            <img src="/sp.jpg" alt="Geography Image">
+        </div>
+    </main>
+</body>
+</html>

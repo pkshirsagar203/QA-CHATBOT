@@ -1,0 +1,13 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+.dropdown, .question, .answer, .feedback {
+    margin-bottom: 20px;
+}
